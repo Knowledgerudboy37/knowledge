@@ -1,0 +1,20 @@
+Create database EmployeeDB;
+use EmployeeDB;
+
+Create table tblEmployee(
+EmployeeNumber int(4) auto_increment  primary key, 
+Name varchar(30) not null,
+ContactNumber varchar(10) not null, 
+JobTitle VARCHAR(30) not null,
+Gender VARCHAR(2) not null, 
+StreetName VARCHAR(30) not null, 
+City VARCHAR(30) not null,
+PostalCode int not null );
+
+Alter table tblEmployee auto_increment = 1001;
+
+insert into tblEmployee (Name,ContactNumber,JobTitle,Gender,StreetName,City,PostalCode ) 
+values ('mikel','0603956919','Administrator','F','Rudboy3','veeriniging',1900);
+
+insert into tblEmployee (Name,ContactNumber,JobTitle,Gender,StreetName,City,PostalCode ) 
+values ('thato','0784910222','Administrator','M','miami4','veeriniging',1900);
